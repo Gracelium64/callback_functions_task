@@ -1,4 +1,4 @@
-import 'package:callback_functions/input_counter_box.dart';
+import 'package:callback_functions/src/features/main_screen/presentation/widgets/input_counter_box.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatefulWidget {

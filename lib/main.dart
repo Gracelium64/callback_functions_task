@@ -1,4 +1,5 @@
-import 'package:callback_functions/main_screen.dart';
+import 'package:callback_functions/src/theme/app_theme.dart';
+import 'package:callback_functions/src/features/main_screen/presentation/main_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,6 +13,8 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: ThemeMode.dark,
       home: MainScreen(),
     );
   }

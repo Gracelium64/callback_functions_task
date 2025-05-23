@@ -36,12 +36,18 @@ class _InputCounterBoxState extends State<InputCounterBox> {
                   widget.onType(_length);
                 });
               },
+              style: TextStyle(color: Colors.black),
               decoration: InputDecoration(
                 hintText: 'Text eingeben',
+
+                hintStyle: TextStyle(color: Colors.black),
                 border: OutlineInputBorder(),
               ),
             ),
-            Text('Länge: $_length'),
+            Text(
+              'Länge: $_length',
+              style: TextStyle(color: Colors.black),
+            ),
           ],
         ),
       ),
