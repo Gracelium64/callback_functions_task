@@ -38,7 +38,7 @@ class _InputCounterBoxState extends State<InputCounterBox> {
               },
               style: TextStyle(color: Colors.black),
               decoration: InputDecoration(
-                hintText: 'Text eingeben',
+                hintText: 'Enter text',
                 hintStyle: TextStyle(color: Colors.black),
                 enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.black),
@@ -52,7 +52,7 @@ class _InputCounterBoxState extends State<InputCounterBox> {
               ),
             ),
             Text(
-              'Länge: $_length',
+              'Length: $_length',
               style: TextStyle(color: Colors.black),
             ),
           ],
