@@ -5,7 +5,12 @@ class InputCounterBox extends StatefulWidget {
   final void Function() onChanged;
   final void Function(int count) onType;
 
-  const InputCounterBox({super.key, required this.cardColor, required this.onChanged, required this.onType});
+  const InputCounterBox({
+    super.key,
+    required this.cardColor,
+    required this.onChanged,
+    required this.onType,
+  });
 
   @override
   State<InputCounterBox> createState() => _InputCounterBoxState();
@@ -31,7 +36,6 @@ class _InputCounterBoxState extends State<InputCounterBox> {
                   widget.onType(_length);
                 });
               },
-
               decoration: InputDecoration(
                 hintText: 'Text eingeben',
                 border: OutlineInputBorder(),
