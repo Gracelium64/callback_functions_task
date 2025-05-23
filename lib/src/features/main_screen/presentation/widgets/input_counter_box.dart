@@ -39,9 +39,16 @@ class _InputCounterBoxState extends State<InputCounterBox> {
               style: TextStyle(color: Colors.black),
               decoration: InputDecoration(
                 hintText: 'Text eingeben',
-
                 hintStyle: TextStyle(color: Colors.black),
-                border: OutlineInputBorder(),
+                enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.black),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.black),
+                ),
+                border: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.black),
+                ),
               ),
             ),
             Text(
