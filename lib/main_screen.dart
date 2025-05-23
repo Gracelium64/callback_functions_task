@@ -6,16 +6,33 @@ class MainScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-          spacing: 16,
-          children: [
-            InputCounterBox(),
-            InputCounterBox(),
-            InputCounterBox(),
-          ],
+    return SafeArea(
+      child: Scaffold(
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            spacing: 16,
+            children: [
+              InputCounterBox(
+                cardColor: Colors.lime,
+                onChanged: () {
+                  debugPrint('Box 1 changed');
+                },
+              ),
+              InputCounterBox(
+                cardColor: Colors.cyan,
+                onChanged: () {
+                  debugPrint('Box 2 changed');
+                },
+              ),
+              InputCounterBox(
+                cardColor: Colors.purpleAccent,
+                onChanged: () {
+                  debugPrint('Box 3 changed');
+                },
+              ),
+            ],
+          ),
         ),
       ),
     );
