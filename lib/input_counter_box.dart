@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 class InputCounterBox extends StatefulWidget {
   final Color cardColor;
   final void Function() onChanged;
+  final void Function(int count) onType;
 
-  const InputCounterBox({super.key, required this.cardColor, required this.onChanged});
+  const InputCounterBox({super.key, required this.cardColor, required this.onChanged, required this.onType});
 
   @override
   State<InputCounterBox> createState() => _InputCounterBoxState();
@@ -27,6 +28,7 @@ class _InputCounterBoxState extends State<InputCounterBox> {
                 setState(() {
                   _length = text.length;
                   widget.onChanged();
+                  widget.onType(_length);
                 });
               },
 
